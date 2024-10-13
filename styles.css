@@ -1,0 +1,327 @@
+:root{
+    --base: #0a0a0a;
+    --fade: #3C3D37;
+    --text: #e2ded8;
+    --accent: #0f0f0f;
+    --light: #e2ded8d5;
+}
+html , .body
+{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    max-width: 100vw;
+    font-family: "Inter", sans-serif;
+}
+a{
+    color: var(--text);
+}
+/*SEC Header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    z-index: 1000;
+    transition: 0.6s;
+    background-color: var(--base);
+    border-bottom: 2px solid var(--fade);
+}
+header .logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    position: relative;
+    transition: 0.6s;
+}
+header p{
+    position: absolute;
+    left: 70px;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 400ms;
+}
+#sign_in:hover{
+    color: #b1b1b1;
+    text-decoration: underline;
+}
+#enroll_btn{
+    padding: 15px 22px;
+    border: 1px solid var(--text);
+    background-color: var(--fade);
+    border-radius: 2px;
+}
+#enroll_btn:hover{
+    background-color: var(--text);
+    color: var(--base);
+}
+/*SEC Hero*/
+.hero{
+    background-color: var(--base);
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    margin-top: 0;
+    top: 0;
+}
+.content {
+    font-size: 100px;
+    position: absolute;
+    margin-top: 70px;
+    width: 100%;
+    height: 50vh;
+    color: var(--text);
+}
+.content p{
+    font-size: 60px;
+    position: relative;
+    top: 70px;
+    left: 60px;
+    max-width: 50%;
+}
+.content img{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    width: 400px;
+    height: 400px;
+}
+#learn_more{
+    font-size: 20px;
+    padding: 15px 22px;
+    border: 1px solid var(--fade);
+    background-color: var(--base);
+    border-radius: 2px;
+    position: relative;
+    left: 70px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 400ms;
+}
+#learn_more:hover{
+    border: 1px solid var(--fade);
+    background-color: var(--fade);
+}
+#yes_btn{
+    font-size: 20px;
+    padding: 15px 90px;
+    border: 1px solid var(--text);
+    background-color: var(--fade);
+    border-radius: 2px;
+    position: relative;
+    margin-left: 90px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 200ms;
+}
+#yes_btn:hover{
+    top: -9px;
+    background-color: var(--text);
+    color: var(--base);
+}
+/*SEC Education*/
+.education_page{
+    background-color: var(--base);
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+}
+.education_page .container {
+    max-width: 80%;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    border: 1px solid var(--fade);
+    color: var(--text);
+    padding: 50px 50px;
+    background-color: var(--accent);
+    font-weight: 800;
+    border-radius: 50px;
+    overflow: clip;
+}
+.education_page .container .text{
+    position: relative;
+    max-width: 63%;
+    margin-left: 30px;
+}
+.education_page .container .text h1{
+    text-shadow: 0px 0px 2px var(--light);
+}
+.education_page .container .text h3{
+    margin-top: 20px;
+    color: var(--light);
+}
+.education_page .container .text p{
+    margin-top: 40px;
+    color: var(--light);
+}
+.education_page .container img{
+    position: absolute;
+    scale: 0.8;
+    top: -10px;
+    right: -80px;
+}
+.white_line{
+    background-color: var(--text);
+    width: 2px;
+    height: 20vh;
+    position: relative;
+    bottom: -65px;
+    margin: auto;
+}
+/*SEC Topics*/
+#includes{
+    position: relative;
+	color: #fff;
+	font-size: 4rem;
+	text-align: center;
+    font-weight: 700;
+    top: 40px;
+}
+.topics{
+	position: sticky;
+    top: 50px;
+	width: 100%;
+}
+.topic-content{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+	gap: 15px;
+	text-align: center;
+}
+.box{
+	padding: 10px;
+	background: var(--accent);
+	border-radius: 15px;
+	transition: all .38s ease;
+    border: 2px solid var(--light);
+}
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+.topic-content .text{
+    font-size: 15px;
+    color: var(--light);
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.topic-content .text h3{
+    font-size: 25px;
+	font-weight: 600;
+	color: var(--text);
+	margin-bottom: 8px;
+}
+.foot{
+    width: 20vw;
+    position: absolute;
+    height: 10vh;
+    background-color: var(--fade);
+    border: 2px solid var(--light);
+    border-radius: 15px;
+}
+.foot h3{
+    font-size: 20px;
+	font-weight: 700;
+	color: var(--text);
+}
+/*SEC Enroll */
+.enroll_banner{
+    position: relative;
+    top: 25vh;
+    width: 100%;
+    height: 40vh;
+    background-color: var(--accent);
+    border-top: 3px solid var(--light);
+    border-bottom: 3px solid var(--light);
+    overflow: clip;
+    text-align: center;
+    color: var(--text);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.781),rgba(5, 5, 5, 0.932)), url(./grain.jpg);
+    background-size: cover;
+}
+.enroll_banner img{
+    position: absolute;
+    left: -100px;
+    top: 30px;
+    rotate: 30deg;
+    width: 350px;
+    height: 350px;
+}
+.banner_text {
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    width: 65%;
+    top: 15px;
+    font-size: 15px;
+}
+.banner_text span{
+    font-size: 30px;
+    text-shadow: 0px 0px 1px var(--light);;
+}
+#enroll_now{
+    font-size: 20px;
+    padding: 15px 90px;
+    border: 1px solid var(--light);
+    background-color: var(--text);
+    border-radius: 2px;
+    position: relative;
+    top: 15%;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 200ms;
+    color: var(--accent);
+}
+#enroll_now:hover{
+    background-color: var(--accent);
+    color: var(--text);
+}
+footer {
+    background-color: var(--base);
+    position: relative;
+    top: 25vh;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    color: var(--light);
+}
+footer a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 10px;
+    text-shadow: 0px 0px 1.5px var(--light);
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer img{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+}
