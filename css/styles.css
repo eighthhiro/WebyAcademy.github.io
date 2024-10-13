@@ -260,7 +260,7 @@ header ul li a{
     overflow: clip;
     text-align: center;
     color: var(--text);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.781),rgba(5, 5, 5, 0.932)), url(./images/grain.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.781),rgba(5, 5, 5, 0.932)), url(/WebyAcademy.github.io/images/grain.jpg);
     background-size: cover;
 }
 .enroll_banner img{
